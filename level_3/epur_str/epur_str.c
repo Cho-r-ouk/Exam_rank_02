@@ -31,6 +31,8 @@ int main(int ac, char **av)
             i++;
         else
         {
+            if (av[1][i] == '\t')
+                av[1][i] = ' ';
             write(1, &av[1][i], 1);
             i++;
         }
